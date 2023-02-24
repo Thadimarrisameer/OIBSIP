@@ -1,10 +1,22 @@
 const converter = document.querySelector('#converter');
 const result = document.querySelector('.result');
 const convertButton = document.querySelector('.convertButton');
-const resetButton = document.querySelector('.resetButton');
+// const resetButton = document.querySelector('.resetButton');
 const changeButton = document.querySelector('.changeButton');
 const C = document.querySelector('.C')
 const F = document.querySelector('.F')
+
+// const swap = () => {
+//     if (C.innerHTML === '°C(Celsius)') {
+//         C.innerHTML = '°F(Fahrenheit)';
+//         F.innerHTML = '°C(Celsius)';
+//         converter.placeholder = "Temperature in °F";
+//     }else {
+//         F.innerHTML = '°F(Fahrenheit)';
+//         C.innerHTML = '°C(Celsius)';
+//         converter.placeholder = "Temperature in °C";
+//     };
+// };
 
 const swap = () => {
     if (C.innerHTML === '°C(Celsius)') {
@@ -23,10 +35,11 @@ const swap = () => {
 //     result.innerHTML = '';
 // }
 
+
 const convert = () => {
     if (/^(-?)(\d+)(\.{1}\d+)?$/.test(converter.value)) {
         result.style.color = "white"
-        if (C.innerHTML === '°C') {
+        if (C.innerHTML === '°C(Celsius)') {
             let value = (converter.value * 1.8) + 32;
             result.innerHTML = `${converter.value}°C is equal to ${value.toFixed(2)}°F`;
         } else {
