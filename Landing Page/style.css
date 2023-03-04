@@ -1,8 +1,8 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&display=swap');
-html{
+/* html{
     scroll-behavior: smooth;
-}
+} */
 /* Color */
 :root{
     --primary: #3155e7;
@@ -57,7 +57,7 @@ body{
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
-    padding: 10px 16px;
+    /* padding: 8px 14px; */
 }
 
 /* .navbar{
@@ -87,7 +87,7 @@ body{
 /* Main Section */
 
 section.hero{
-    padding: 80px 0;
+    padding: 100px 0;
 }
 
 section.hero .text{
@@ -108,7 +108,7 @@ section.hero .text{
 }
 
 section.setup{
-    padding: 287px 0;
+    padding: 120px 0;
 }
 
 section.setup .text-header h3{
@@ -170,10 +170,10 @@ section.information .info-1{
     padding: 183px 0;
 }
 
-footer{
+/* footer{
     padding-top: 279px;
     margin-bottom: 44px;
-}
+} */
 
 footer a{
     font-weight: bold;
